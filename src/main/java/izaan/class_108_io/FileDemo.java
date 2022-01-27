@@ -11,7 +11,7 @@ public class FileDemo {
 
     public static void readFile() {
         try {
-            FileReader fileReader = new FileReader( System.getProperty("user.dir")+"/src/io/izaan/class_108_io/StudentInfo.txt");
+            FileReader fileReader = new FileReader( System.getProperty("user.dir")+"/src/main/java/izaan/class_108_io/StudentInfo.txt");
             int letter;
             while ((letter = fileReader.read()) != -1 ) {  // 73
                 System.out.print((char) letter);
@@ -30,3 +30,5 @@ public class FileDemo {
         System.out.println(System.getProperty("Name"));
     }
 }
+
+// java -cp target/B2102JavaDemo-1.0-SNAPSHOT.jar izaan.class_108_io.FileDemo
